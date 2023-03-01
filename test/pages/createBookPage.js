@@ -57,7 +57,7 @@ export class CreateBookPage {
     }
 
     async setPublishDate() {
-        const date = new Date('October 1, 1979');
+        const date = new Date('July 1, 1979');
         const day = date.getDate().toString().padStart(2, '0');
         const month = (date.getMonth() + 1).toString().padStart(2, '0');
         const year = date.getFullYear();

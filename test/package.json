@@ -3,6 +3,9 @@
     "@playwright/test": "^1.25.0",
     "babel-plugin-istanbul": "^6.1.1",
     "nyc": "^15.1.0",
-    "playwright-test-coverage": "^1.1.0"
+    "playwright-test-coverage": "^1.1.0",
+    "scripts": {
+      "testCase": "npx playwright test — project=chromium"
+    }
   }
 }

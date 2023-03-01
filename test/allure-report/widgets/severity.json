@@ -1,0 +1,1 @@
+[{"uid":"e6e1582cff697cad","name":"Check the enterred data","time":{"start":1677499381379,"stop":1677499387035,"duration":5656},"status":"passed","severity":"normal"},{"uid":"f59d68497c605feb","name":"Create a new book and make sure it is created successfully","time":{"start":1677499387654,"stop":1677499395725,"duration":8071},"status":"passed","severity":"normal"}]

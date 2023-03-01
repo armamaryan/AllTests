@@ -11,7 +11,7 @@ function bookTitleGeneratedText() {
 endValue = bookTitleGeneratedText();
 const pageCount = '224';
 const bookDescription = 'The Hitchhiker\'s Guide to the Galaxy is a comic science fiction series created by Douglas Adams.';
-const publishDate = '1979-10-01';
+const publishDate = '1979-07-01';
 const publishDateFormatted = 'Mon Oct 01 1979';
 const selectedAuhtor = '62ea5cd484ea6816f841c5cf';
 const authorName = 'Romian Toma';
