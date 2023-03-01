@@ -7,6 +7,6 @@
 
   },
   "scripts": {
-    "testCase": "npx playwright test"
+    "testCase": "npx install playwright && npx playwright test"
   }
 }
