@@ -4,9 +4,11 @@
     "babel-plugin-istanbul": "^6.1.1",
     "nyc": "^15.1.0",
     "playwright-test-coverage": "^1.1.0"
-
   },
   "scripts": {
-    "testCase": "npx install playwright && npx playwright test"
+    "testCase": "npx playwright install && npx playwright test"
+  },
+  "dependencies": {
+    "playwright": "^1.31.1"
   }
 }
