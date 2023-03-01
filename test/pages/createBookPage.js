@@ -70,10 +70,11 @@ export class CreateBookPage {
             this.page.waitForSelector('input[type=file]'),
         ]);
 
-        const os = require('os');
-        const path = require('path');
+        // const os = require('os');
+        // const path = require('path');
 
-        const filePath = path.join(os.homedir(), 'bookCover.jpg');
+        // const filePath = path.join(os.homedir(), 'bookCover.jpg');
+        const filePath = ('bookCover.jpg')
         await fileChooser.setInputFiles(filePath);
         await this.page.waitForTimeout(2000);
 
