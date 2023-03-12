@@ -20,40 +20,40 @@ export class CreateBookPage {
         // Enter the page count
         await this.pageCount.fill(constants.pageCount);
         // Enter description
-        await this.bookDescriptionInput.fill(constants.bookDescription);
+         this.bookDescriptionInput.fill(constants.bookDescription);
     }
 
-    async getBookTitleInputText() {
-        return await this.bookTitleinput.inputValue();
+     async getBookTitleInputText() {
+        return this.bookTitleinput.inputValue();
     }
 
     async getPageCountText() {
-        return await this.pageCount.inputValue();
+        return this.pageCount.inputValue();
     }
 
     async getBookDescriptionInputText() {
-        return await this.bookDescriptionInput.inputValue();
+        return this.bookDescriptionInput.inputValue();
     }
 
     async getAuthorDropdownOption() {
-        return await this.authorDropdown.inputValue();
+        return this.authorDropdown.inputValue();
     }
 
     async getPublishDate() {
-        return await this.publishDate.inputValue();
+        return this.publishDate.inputValue();
     }
 
     async getBookTitleValue() {
-        return await this.bookTitle.innerText();
+        return this.bookTitle.innerText();
 
     }
 
     async setAuthorDropdownOption() {
-        await this.authorDropdown.selectOption({ label: 'Romian Toma' });
+       await  this.authorDropdown.selectOption({ label: 'Romian Toma' });
     }
 
     async clickCreateButton() {
-        await this.page.click(selectors.createButton);
+         this.page.click(selectors.createButton);
     }
 
     async setPublishDate() {
@@ -62,7 +62,7 @@ export class CreateBookPage {
         const month = (date.getMonth() + 1).toString().padStart(2, '0');
         const year = date.getFullYear();
         const dateString = `${year}-${month}-${day}`;
-        await this.publishDate.fill(dateString);
+         this.publishDate.fill(dateString);
     }
 
     async coverImageUpload() {
@@ -72,10 +72,9 @@ export class CreateBookPage {
 
         // const os = require('os');
         // const path = require('path');
-
         // const filePath = path.join(os.homedir(), 'bookCover.jpg');
-        const filePath = ('bookCover.jpg')
-        await fileChooser.setInputFiles(filePath);
+        const filePath = ('media_files\\bookCover.jpg')
+         fileChooser.setInputFiles(filePath);
         await this.page.waitForTimeout(2000);
 
     }

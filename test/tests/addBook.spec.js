@@ -10,7 +10,7 @@ test.describe('Creating a new book', () => {
     await page.goto('https://mygradaran.herokuapp.com/books/new');
     await createBookPage.fillInputFields();
     await createBookPage.setAuthorDropdownOption();
-    await createBookPage.setPublishDate();
+     createBookPage.setPublishDate();
     await createBookPage.coverImageUpload();
   });
 
@@ -23,7 +23,7 @@ test.describe('Creating a new book', () => {
   })
 
   test('Create a new book and make sure it is created successfully', async ({ page }) => {
-    await createBookPage.clickCreateButton();
+     createBookPage.clickCreateButton();
     expect(await createBookPage.getBookTitleValue()).toEqual(randomText)
   });
 })
